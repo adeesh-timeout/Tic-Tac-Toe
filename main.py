@@ -123,7 +123,6 @@ def detect_win(current_player):
                 winner_box_pos = [(0,2), (1,1), (2,0)]
 
     # Horizontal and Vertical
-    print(winner_box_pos)
     if is_won == None:
         for row_n in range(ROW): # 0, 1, 2
             winner_box_pos = [(row_n, 0)]
@@ -216,4 +215,5 @@ while run:
         process_won()
 
     clock.tick(FPS)
+
     pygame.display.update()
